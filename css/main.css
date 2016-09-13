@@ -1,0 +1,228 @@
+/* - - - - - - - - - - Globla styles - - - - - - - - - - */
+
+/* - - - - - - - - - - University-page styles - - - - - - - - - -*/
+.container{
+    background-color: lightblue;
+    border-radius: 10px;
+    height: 650px;
+    font-family: 'Suez One', serif;
+    text-align: center;
+}
+
+.tiles-block-university{
+    margin-top: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    height: 600px;
+    background-image: url(image/logo-kharkov.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {width: 0px;}
+
+.info-block-university{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 600px;
+    background-image: url(image/kharkov-logo-2.jpg);
+}
+
+.tiles{
+    position: relative;
+    margin-top: 35px;
+    margin-right: 40px;
+    float: left;
+    height: 235px;
+    width: 235px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.mask{
+    background-color: blue;
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    height: 235px;
+    width: 235px;
+    opacity: 0;
+    color: white;
+    z-index: 10;
+}
+
+.mask button:last-child{
+    margin-top: 0px;
+}
+
+.mask button{
+    color: black;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height: 40px;
+}
+
+.mask:hover{
+    opacity: 0.85;
+    transition-duration: 0.5s;
+}
+
+.tiles-text{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.kharkov-name{
+    font-size: 24px;
+    color: lightcyan;
+}
+
+.info-block-university{
+    font-size: 16px;
+    color: lightcyan;
+}
+
+/* - - - - - - - - - - - - - MEDIA REQUEST`S - - - - - - - - - - - -*/
+@media screen and (max-width: 1120px) {
+    .tiles{
+        margin-left: 23px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tiles{
+        margin-left: 7px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .mask{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .tiles-text{
+        font-size: 12px;
+    }
+}
+
+/* - - - - - - - - - - - - - - Faculty-page styeles - - - - - - - - - - - - - */
+
+.tiles-block-faculty{
+    margin-top: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    height: 600px;
+    background-image: url(image/KHAI-logo-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.info-block-faculty{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 600px;
+    background-image:url(image/kharkov-logo-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-block-faculty p{
+    font-size: 16px;
+    color: lightcyan;
+}
+
+/* - - - - - - - - - - - - - - TABLE styles - - - - - - - - - - - - - - - -*/
+
+.table-container p{
+    font-family: 'Suez One', serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.table-container{
+    background-color: white;
+}
+
+.table-tiles{
+    width: 160px;
+    height: 90px;
+    background-color: lightblue;
+    margin: 5px;
+    margin-right: 0px;
+}
+
+.table-tiles span{
+    font-size: 28px;
+}
+
+.table-tiles p{
+    padding-top: 10px;
+}
+
+.table-tiles:hover{
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.table-line{
+    float: left;
+}
+
+.table-mask{
+    position: absolute;
+    background-color: lightblue;
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+    margin-left: 5px;
+}
+
+.table-mask:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.table-mask p{
+    font-size: 20px;
+}
+
+.lessons{
+    width: 90px;
+}
+
+.table-mask-lessons{
+    position: absolute;
+    background-color: darkblue;
+    color: white;
+    width: 160px;
+    height: 90px;
+    opacity: 0;
+}
+
+.table-mask-lessons button{
+    background-color: blue;
+    font-family: 'Suez One', serif;
+    border: 0;
+    margin-left: 20px;
+}
+
+.table-mask-lessons:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
